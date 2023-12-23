@@ -1,0 +1,169 @@
+ERROR - 2023-11-28 09:14:42 --> mysqli_sql_exception: Table 'hotelmanagment.employee' doesn't exist in C:\xampp\htdocs\Hotel\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Hotel\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Hotel\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Hotel\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Hotel\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Hotel\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Hotel\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Hotel\app\Controllers\Admin.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Hotel\system\CodeIgniter.php(942): App\Controllers\Admin->employee()
+#8 C:\xampp\htdocs\Hotel\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Hotel\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Hotel\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-28 09:14:42 --> Table 'hotelmanagment.employee' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(30): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->employee()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:16:17 --> Undefined variable: employee
+in APPPATH\Views\Admin\employee.php on line 46.
+ 1 APPPATH\Views\Admin\employee.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employee', 'C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php', 46, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Admin/employee', [], true)
+ 5 APPPATH\Controllers\Admin.php(32): view('Admin/employee')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:17:15 --> Undefined variable: employee
+in APPPATH\Views\Admin\employee.php on line 46.
+ 1 APPPATH\Views\Admin\employee.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employee', 'C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php', 46, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Admin/employee', [], true)
+ 5 APPPATH\Controllers\Admin.php(30): view('Admin/employee')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:17:19 --> Undefined variable: employee
+in APPPATH\Views\Admin\employee.php on line 46.
+ 1 APPPATH\Views\Admin\employee.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employee', 'C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php', 46, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Admin/employee', [], true)
+ 5 APPPATH\Controllers\Admin.php(30): view('Admin/employee')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:18:28 --> Undefined variable: employee
+in APPPATH\Views\Admin\employee.php on line 46.
+ 1 APPPATH\Views\Admin\employee.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employee', 'C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php', 46, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Admin/employee', [], true)
+ 5 APPPATH\Controllers\Admin.php(30): view('Admin/employee')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:18:47 --> Undefined variable: employee
+in APPPATH\Views\Admin\employee.php on line 46.
+ 1 APPPATH\Views\Admin\employee.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employee', 'C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php', 46, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Admin/employee', [], true)
+ 5 APPPATH\Controllers\Admin.php(30): view('Admin/employee')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:19:06 --> Undefined variable: employee
+in APPPATH\Views\Admin\employee.php on line 46.
+ 1 APPPATH\Views\Admin\employee.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employee', 'C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php', 46, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Admin/employee', [], true)
+ 5 APPPATH\Controllers\Admin.php(30): view('Admin/employee')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:20:25 --> Undefined variable: employee
+in APPPATH\Views\Admin\employee.php on line 46.
+ 1 APPPATH\Views\Admin\employee.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employee', 'C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php', 46, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Admin/employee', [], true)
+ 5 APPPATH\Controllers\Admin.php(31): view('Admin/employee')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:21:05 --> Undefined variable: employee
+in APPPATH\Views\Admin\employee.php on line 46.
+ 1 APPPATH\Views\Admin\employee.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employee', 'C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php', 46, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Admin/employee', [], true)
+ 5 APPPATH\Controllers\Admin.php(31): view('Admin/employee')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:58:19 --> Invalid file: "student/add_student.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student/add_student.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('student/add_student', [], true)
+ 3 APPPATH\Controllers\Admin.php(70): view('student/add_student', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->add_record()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:59:32 --> Invalid file: "emplopyee.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('emplopyee.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('emplopyee', [], true)
+ 3 APPPATH\Controllers\Admin.php(70): view('emplopyee', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->add_record()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:00:46 --> Undefined variable: employee
+in APPPATH\Views\Admin\employee.php on line 46.
+ 1 APPPATH\Views\Admin\employee.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employee', 'C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Hotel\\app\\Views\\Admin\\employee.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/employee', [], true)
+ 5 APPPATH\Controllers\Admin.php(70): view('admin/employee', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->add_record()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:01:08 --> Invalid file: "employee.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('employee.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('employee', [], true)
+ 3 APPPATH\Controllers\Admin.php(70): view('employee', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->add_record()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:06:48 --> Invalid file: "employee.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('employee.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('employee', [], true)
+ 3 APPPATH\Controllers\Admin.php(70): view('employee', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->add_record()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:37:17 --> Invalid file: "employee.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('employee.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('employee', [], true)
+ 3 APPPATH\Controllers\Admin.php(70): view('employee', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->add_record()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
